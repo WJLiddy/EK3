@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/nes-07-02.wav-52cbeace3675b4be2b2ba864d6783ffc.sample"
+
+[deps]
+
+source_file="res://music/nes-samples/nes-07-02.wav"
+dest_files=[ "res://.import/nes-07-02.wav-52cbeace3675b4be2b2ba864d6783ffc.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

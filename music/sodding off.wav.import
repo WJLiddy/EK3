@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/sodding off.wav-5350ef9a9c968d0d6b80044d7755f51c.sample"
+
+[deps]
+
+source_file="res://music/sodding off.wav"
+dest_files=[ "res://.import/sodding off.wav-5350ef9a9c968d0d6b80044d7755f51c.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

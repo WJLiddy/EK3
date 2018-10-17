@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/nes-09-09.wav-227c919f748133683d6748e96a6efee2.sample"
+
+[deps]
+
+source_file="res://music/nes-samples/nes-09-09.wav"
+dest_files=[ "res://.import/nes-09-09.wav-227c919f748133683d6748e96a6efee2.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

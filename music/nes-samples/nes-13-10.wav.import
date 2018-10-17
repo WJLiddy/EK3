@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/nes-13-10.wav-98cedfffba1a45449e624cd6dc1af2ec.sample"
+
+[deps]
+
+source_file="res://music/nes-samples/nes-13-10.wav"
+dest_files=[ "res://.import/nes-13-10.wav-98cedfffba1a45449e624cd6dc1af2ec.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
