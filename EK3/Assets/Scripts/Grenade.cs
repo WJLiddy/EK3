@@ -28,7 +28,7 @@ public class Grenade : Explosive
 
     public override float getDemolitionRadius()
     {
-        return .5f;
+        return .25f;
     }
 
     // MUST be greater than demolition radius.

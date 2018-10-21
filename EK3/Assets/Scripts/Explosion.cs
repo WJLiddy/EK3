@@ -28,18 +28,23 @@ public abstract class Explosive : MonoBehaviour
     public void Detonate()
     {
         Explosion e = new Explosion(this);
-        /**
-        for (int x = (int)this.transform.localPosition.x + -getDemolitionRadius(); x != (int)this.transform.localPosition.x + getDemolitionRadius(); ++x)
+        // in "tile" coords.
+        int xmin = (int)((e.origin.x + -e.demRadius) / ((float)Common.TILE_SIZE * 0.01));
+        int xmax = 1 + (int)((e.origin.x + e.demRadius) / ((float)Common.TILE_SIZE * 0.01));
+        int ymin = (int)((e.origin.y + -e.demRadius) / ((float)Common.TILE_SIZE * 0.01));
+        int ymax = 1 + (int)((e.origin.y + e.demRadius) / ((float)Common.TILE_SIZE * 0.01));
+        for (int x = xmin; x <= xmax; ++x)
         {
-            for (int y = (int)this.transform.localPosition.y +-getDemolitionRadius(); y != (int)this.transform.localPosition.y + getDemolitionRadius(); ++y)
+            for (int y = ymin; y <= ymax; ++y)
             {
-                if (Common.tileAt(x, y) != null && Vector2.Distance(Common.tileAt(x,y).transform.localPosition, e.origin) < e.demRadius)
+                var tile_mid = new Vector2(x * ((float)(Common.TILE_SIZE * 0.01)), y * ((float)(Common.TILE_SIZE * 0.01)));
+                if (Common.worldTiles.tileExists(x, y) && Vector2.Distance(tile_mid, e.origin) < e.demRadius)
                 {
-                    //Common.tileAt(x, y).GetComponent<Ground>().explode(e);
+                    Common.worldTiles.destroyTile(x, y);
                 }
             }
         }
-    */
+   
 
         Knight n = Common.knight.GetComponent<Knight>();
         if(Vector2.Distance(n.transform.localPosition,e.origin) < e.launchRadius)

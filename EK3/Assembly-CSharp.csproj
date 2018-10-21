@@ -63,11 +63,10 @@
     <Compile Include="Assets\Scripts\Common.cs" />
     <Compile Include="Assets\Scripts\Explosion.cs" />
     <Compile Include="Assets\Scripts\Grenade.cs" />
-    <Compile Include="Assets\Scripts\Ground.cs" />
     <Compile Include="Assets\Scripts\InputHandler.cs" />
     <Compile Include="Assets\Scripts\Knight.cs" />
     <Compile Include="Assets\Scripts\SpriteSnap.cs" />
-    <Compile Include="Assets\Scripts\TileMapCollidePopulator.cs" />
+    <Compile Include="Assets\WorldTiles.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/Jack/Desktop/EK3/EK3/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
