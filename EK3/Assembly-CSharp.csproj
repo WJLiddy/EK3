@@ -61,12 +61,13 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Camera2D.cs" />
     <Compile Include="Assets\Scripts\Common.cs" />
+    <Compile Include="Assets\Scripts\Decal.cs" />
     <Compile Include="Assets\Scripts\Explosion.cs" />
     <Compile Include="Assets\Scripts\Grenade.cs" />
     <Compile Include="Assets\Scripts\InputHandler.cs" />
     <Compile Include="Assets\Scripts\Knight.cs" />
     <Compile Include="Assets\Scripts\SpriteSnap.cs" />
-    <Compile Include="Assets\WorldTiles.cs" />
+    <Compile Include="Assets\Scripts\WorldTiles.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/Jack/Desktop/EK3/EK3/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>

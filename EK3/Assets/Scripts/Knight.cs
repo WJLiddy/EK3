@@ -54,7 +54,7 @@ public class Knight : MonoBehaviour
         if (yvel < 0)
         {
             var frame = 5 + ((-yvel)/anim_spread_vel);
-            anim = fallAnimStates[Math.Min((int)frame, 11)];
+            anim = fallAnimStates[Math.Min((int)frame, 10)];
         }
         GetComponentInChildren<SpriteRenderer>().sprite = anim;
     }

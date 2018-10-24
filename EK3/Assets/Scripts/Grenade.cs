@@ -6,9 +6,13 @@ using UnityEngine;
 public class Grenade : Explosive
 {
     public float explosionTime = 1f;
-	
-	// Update is called once per frame
-	void Update ()
+
+    private void Start()
+    {
+        GetComponent<Rigidbody2D>().AddTorque(UnityEngine.Random.Range(-1f, 1f));
+    }
+    // Update is called once per frame
+    void Update ()
     {
         explosionTime -= Time.deltaTime;
         if (explosionTime <= 0f)

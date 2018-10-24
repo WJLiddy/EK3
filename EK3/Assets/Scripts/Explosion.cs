@@ -25,6 +25,14 @@ public abstract class Explosive : MonoBehaviour
 
     bool explosionColliderTrigger;
 
+    public void addExplosionDecal(Vector2 v)
+    {
+        GameObject d = Instantiate(Resources.Load<GameObject>("misc/Decal"));
+        d.GetComponent<Decal>().setType("explosion", 30);
+        d.transform.SetParent(Common.detonationHolder.transform);
+        d.transform.localPosition = v;
+    }
+
     public void Detonate()
     {
         Explosion e = new Explosion(this);
@@ -44,6 +52,8 @@ public abstract class Explosive : MonoBehaviour
                 }
             }
         }
+
+        addExplosionDecal(e.origin);
    
 
         Knight n = Common.knight.GetComponent<Knight>();
